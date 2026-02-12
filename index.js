@@ -13,9 +13,8 @@ const client = new Client({
     ]
 });
 
-const TOKEN = process.env.MTQ3MTU2MzYyNjQxNzYxOTEwMQ.GC3Iee.gROmCp6WxF9_T_lATEFqBACgOGQBU481tjm6_I
-;
-const GUILD_ID = process.env.GUILD1453195582280696009;
+const TOKEN = process.env.TOKEN;
+const GUILD_ID = process.env.GUILD_ID;
 
 
 client.once('ready', () => {
