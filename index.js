@@ -16,6 +16,10 @@ const client = new Client({
 const TOKEN = process.env.TOKEN;
 const GUILD_ID = process.env.GUILD_ID;
 
+// Rota raiz para o Render e UptimeRobot não darem "Not Found"
+app.get('/', (req, res) => {
+    res.send('Bot online e servidor de pé!');
+});
 
 client.once('ready', () => {
     console.log(`Bot online como ${client.user.tag}`);
